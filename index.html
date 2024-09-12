@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <link rel="stylesheet" href="../dist/css/custom.css">
+</head>
+
+<body class="lang-selection">
+    <div class="lang-selection-wrapper">
+
+        <h1>Please choose the language:</h1>
+        <div class="lang-btn-wrapper">
+            <button id="english-btn">English</button>
+            <button id="hindi-btn">हिन्दी</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('english-btn').onclick = function () {
+            window.location.href = 'english/index.html';
+        };
+        document.getElementById('hindi-btn').onclick = function () {
+            window.location.href = 'hindi/index.html';
+        };
+    </script>
+</body>
+
+</html>
