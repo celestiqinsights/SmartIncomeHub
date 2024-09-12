@@ -26,4 +26,21 @@ body {
   padding: 0 3.25em;
 }
 
+.logo-wrapper {
+  max-width: 300px;
+  max-height: 150px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.logo-wrapper img {
+  max-width: 100%;
+}
+
+.header-logo-wrapper {
+  position: absolute;
+  max-width: 150px;
+  top: 20px;
+  left: 50px;
+}
+
 /*# sourceMappingURL=custom.css.map */
