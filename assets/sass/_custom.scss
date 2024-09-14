@@ -1,0 +1,321 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.lang-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    .lang-selection-wrapper {
+        text-align: center;
+    }
+
+    .lang-btn-wrapper {
+        display: flex;
+        justify-content: space-around;
+        max-width: 420px;
+        margin: 0 auto;
+
+        > button {
+            min-width: 175px;
+            padding: 0 3.25em;
+        }
+    }
+}
+
+.logo-wrapper {
+    max-width: 300px;
+    max-height: 150px;
+    width: 100%;
+    margin-bottom: 50px;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.header-logo-wrapper {
+    position: absolute;
+    max-width: 150px;
+    top: 20px;
+    left: 50px;
+}
+
+/* FAQ Accordion */
+.faq-section {
+    padding: 100px;
+    background-color: _palette(fg-bold);
+}
+
+.faq {
+    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faq-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 40px;
+    position: relative;
+    transition: 0.3s all ease;
+}
+
+.faq-item-que {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+
+.faq-item-ans {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    position: relative;
+    box-sizing: content-box !important;
+}
+
+.faq-item-ans-text {
+    position: relative;
+}
+
+.faq-item-ans ul {
+    margin: 0;
+}
+
+.faq-item-ans * {
+    max-width: 100%;
+}
+
+.faq-item-ans p:first-child {
+    margin-top: 0;
+}
+
+.faq-item-ans p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-template-bg .faq-item {
+    padding: 30px 26px;
+    margin-bottom: 20px;
+    background: $white;
+    color: $black;
+}
+
+.faq-template-bg.faq-accordion .faq-items:after {
+    border: 1px solid $black;
+}
+
+.faq-template-bg.faq-accordion .faq-items-hide:after {
+    border: none;
+}
+
+.faq-template-bg.faq-accordion .faq-items .faq-item:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.faq-template-bg.faq-accordion .faq-items .faq-item:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.faq-accordion .faq-content {
+    margin-top: 40px;
+}
+
+.faq-accordion .faq-items {
+    position: relative;
+    border-radius: 10px;
+}
+
+.faq-accordion .faq-items:after {
+    content: '';
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    opacity: 0.1;
+}
+
+.faq-accordion .faq-item {
+    margin-bottom: 0;
+    box-shadow: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.faq-accordion .faq-item:before,
+.faq-accordion .faq-item:after {
+    opacity: 0.1;
+    background-color: $black;
+}
+
+.faq-accordion .faq-item-active .faq-item-ans:after {
+    content: '';
+    height: 1px;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.faq-accordion .faq-item:not(:last-child):after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    left: 0;
+}
+
+.faq-accordion .faq-item:last-child .faq-item-ans {
+    border-radius: 0 0 10px 10px;
+}
+
+.faq-accordion .faq-item-que {
+    margin-bottom: 0;
+    padding: 24px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.faq-accordion .faq-item-que-text {
+    padding-right: 50px;
+}
+
+.faq-accordion .faq-item-que-icon {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 50%;
+    right: 24px;
+    margin-top: -8px;
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    background: transparent;
+    outline: none;
+}
+
+.faq-accordion .faq-item-que-icon:before,
+.faq-accordion .faq-item-que-icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    transition: 0.3s;
+    border-radius: 4px;
+    background: currentColor;
+}
+
+.faq-icon-plus.faq-accordion .faq-item-que-icon:before,
+.faq-icon-plus.faq-accordion .faq-item-que-icon:after {
+    width: 16px;
+    height: 2px;
+    top: 7px;
+}
+
+.faq-icon-plus.faq-accordion .faq-item-que-icon:after {
+    transform: rotate(90deg);
+}
+
+.faq-accordion .faq-item-que:hover .faq-item-que-icon {
+    opacity: 0.8;
+}
+
+.faq-accordion .faq-item-ans {
+    padding: 0 26px;
+    height: 0;
+    cursor: auto;
+    background-color: $white;
+    transition: 0.2s all ease;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.faq-accordion .faq-item-ans-text {
+    position: relative;
+    top: -10px;
+    opacity: 0;
+    transition:
+        top 0.3s ease 0.3s,
+        opacity 0.3s ease 0.3s;
+}
+
+.faq-accordion .faq-item-active {
+    background-color: $white;
+}
+
+.faq-accordion .faq-item-active .faq-item-que {
+    color: $white;
+    background-color: $acc-dark;
+}
+
+.faq-icon-plus.faq-accordion .faq-item-active .faq-item-que-icon {
+    transform: rotate(45deg);
+}
+
+.faq-accordion .faq-item-active .faq-item-ans {
+    pointer-events: initial;
+    padding: 25px;
+}
+
+.faq-accordion .faq-item-active .faq-item-ans-text {
+    opacity: 1;
+    top: 0;
+    transition:
+        top 0.3s ease 0.2s,
+        opacity 0.3s ease 0.2s;
+}
+
+#faq-1.faq-accordion.faq-template-bg .faq-item:after,
+#faq-1.faq-accordion .faq-item-que:after,
+#faq-1.faq-accordion .faq-item-que-icon:before,
+#faq-1.faq-accordion .faq-item-que-icon:after,
+#faq-1.faq-accordion .faq-item:after,
+#faq-1.faq-accordion .faq-item:before,
+#faq-1.faq-accordion .faq-item-active.faq-item:after {
+    background-color: $white;
+}
+
+#faq-1.faq-accordion .faq-item:not(.faq-item-active) .faq-item-que {
+    background-color: $acc-light;
+    color: $white;
+}
+
+#faq-1 .faq-item-ans-text {
+    color: $black;
+}
+
+.faq-header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: $acc-dark;
+}
+
+.faq-item-ans ul li {
+    margin-top: 20px;
+}
