@@ -323,3 +323,206 @@ body {
 .faq-item-ans ul li {
     margin-top: 20px;
 }
+
+/* Card Themes - Start */
+.basic {
+    .pricing-header {
+        background-color: $primary;
+    }
+
+    .price-circle {
+        border: 10px solid $primary;
+        transition: all 0.4s;
+    }
+
+    &:hover {
+        .price-circle {
+            border-width: 5px;
+        }
+    }
+
+    .buy-now {
+        background-image: none !important;
+        background-color: $primary !important;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.echo {
+    .pricing-header {
+        background-color: $echo;
+    }
+
+    .price-circle {
+        border: 10px solid $echo;
+        transition: all 0.4s;
+    }
+
+    &:hover {
+        .price-circle {
+            border-width: 5px;
+        }
+    }
+
+    .buy-now {
+        background-image: none !important;
+        background-color: $echo !important;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.pro {
+    .pricing-header {
+        background-color: $pro;
+    }
+
+    .price-circle {
+        border: 10px solid $pro;
+        transition: all 0.4s;
+    }
+
+    &:hover {
+        .price-circle {
+            border-width: 5px;
+        }
+    }
+
+    .buy-now {
+        background-image: none !important;
+        background-color: $pro !important;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.container {
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing-section {
+    .column {
+        flex: 25%;
+        padding: 10px;
+        width: calc(33.3% - 30px);
+        box-sizing: border-box;
+
+        @media screen and (max-width: 980px) {
+            flex: 50%;
+            display: block;
+        }
+        @media screen and (max-width: 700px) {
+            flex: 100%;
+            display: block;
+        }
+    }
+
+    .pricing-card {
+        height: 100%;
+        background-color: $white;
+        -moz-border-radius: $radius;
+        -webkit-border-radius: $radius;
+        border-radius: $radius;
+        position: relative;
+        transition: all 0.4s;
+
+        &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+            transform: scale(1.05);
+        }
+
+        .popular {
+            position: absolute;
+            top: 0;
+            right: 5%;
+            width: auto;
+            padding: 10px;
+            border-bottom-left-radius: $radius;
+            border-bottom-right-radius: $radius;
+            background-color: #eb3b5a;
+            color: $white;
+            font-size: 12px;
+            z-index: 1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .pricing-header {
+            width: 100%;
+            height: 150px;
+            position: relative;
+            border-radius: $radius $radius 0 0;
+            -webkit-border-radius: $radius $radius 0 0;
+            -moz-border-radius: $radius $radius 0 0;
+
+            .plan-title {
+                font-size: 24px;
+                color: $white;
+                position: relative;
+                top: 25%;
+            }
+
+            .price-circle {
+                width: calc(33.3% - 30px);
+                width: 135px;
+                height: 135px;
+                border-radius: 100%;
+                left: calc(50% - 60px);
+                top: 60%;
+                background-color: $black;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                //box-shadow: 1px 3px 5px rgba(0, 0, 0, .4);
+                .info {
+                    display: none;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: gray;
+                }
+
+                .price-title {
+                    display: block;
+                    font-size: 36px;
+                    padding: 0;
+                    font-weight: 600;
+                    small {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            h2 {
+                position: relative;
+                top: 40%;
+                color: $white;
+            }
+        }
+
+        ul {
+            margin: 80px 0 0;
+            padding: 0;
+
+            li {
+                list-style-type: none;
+                display: block;
+                padding: 15px 0 15px 0;
+                margin: 0;
+                border-bottom: 1px solid #f2f2f2;
+                font-size: 0.75em;
+                color: $black;
+
+                strong {
+                    color: $black;
+                }
+            }
+        }
+
+        .buy-button-box {
+            margin: 30px;
+        }
+    }
+}
