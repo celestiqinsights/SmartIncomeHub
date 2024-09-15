@@ -530,3 +530,28 @@ body {
 .outro {
     text-align: center;
 }
+
+.designed-by {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 24px;
+    border: none;
+
+    &:hover {
+        color: #eb3b5a;
+    }
+}
+
+#footer {
+    ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

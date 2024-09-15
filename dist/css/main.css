@@ -490,6 +490,27 @@ body {
   text-align: center;
 }
 
+.designed-by {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 24px;
+  border: none;
+}
+.designed-by:hover {
+  color: #eb3b5a;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+#footer ul li {
+  display: flex;
+  align-items: center;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
