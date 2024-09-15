@@ -64,8 +64,8 @@ body {
 }
 
 .faq-container {
-    width: 85%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -73,10 +73,14 @@ body {
     margin-bottom: 40px;
     position: relative;
     transition: 0.3s all ease;
+
+    b {
+        color: $black;
+    }
 }
 
 .faq-item-que {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     margin-bottom: 12px;
