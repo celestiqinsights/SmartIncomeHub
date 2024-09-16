@@ -1,20 +1,20 @@
 $(document).ready(function () {
     // FAQ Accordion
     function faqAccordion() {
-        $('.faq-item').each(function () {
+        $('.accordion-item').each(function () {
             var $item = $(this);
-            var $question = $item.find('.faq-item-que');
+            var $question = $item.find('.accordion-item-que');
 
             $question.on('click', function () {
-                var isActive = $item.hasClass('faq-item-active');
+                var isActive = $item.hasClass('accordion-item-active');
 
                 // Close all items
-                $('.faq-item').removeClass('faq-item-active').find('.faq-item-ans').css('height', '0');
+                $('.accordion-item').removeClass('accordion-item-active').find('.accordion-item-ans').css('height', '0');
 
                 // Open clicked item if it wasn't already active
                 if (!isActive) {
-                    $item.addClass('faq-item-active');
-                    var $answer = $item.find('.faq-item-ans');
+                    $item.addClass('accordion-item-active');
+                    var $answer = $item.find('.accordion-item-ans');
                     $answer.css('height', $answer[0].scrollHeight + 'px');
                 }
             });

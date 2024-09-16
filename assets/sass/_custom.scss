@@ -47,31 +47,17 @@ body {
     left: 50px;
 }
 
-/* FAQ Accordion */
-.faq-section {
-    padding: 100px;
-    background-color: _palette(fg-bold);
-}
-
+/* Accordion Style */
 .accordion {
-    .faq-container {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .faq-header {
-        text-align: center;
+    &-header {
+        margin: 0 0 25px;
         font-size: 40px;
         font-weight: 600;
         color: $acc-dark;
+        text-align: center;
     }
 
-    .faq-content {
-        margin-top: 40px;
-    }
-
-    .faq-items {
+    &-items {
         position: relative;
         border-radius: 10px;
 
@@ -89,7 +75,7 @@ body {
         }
     }
 
-    .faq-item {
+    &-item {
         position: relative;
         margin: 0;
         padding: 0;
@@ -97,7 +83,6 @@ body {
         cursor: pointer;
         overflow: hidden;
         box-shadow: none;
-        background: $white;
         transition: all 0.3s ease;
 
         &:before,
@@ -150,7 +135,7 @@ body {
                 }
             }
 
-            &:hover .faq-item-que-icon {
+            &:hover .accordion-item-que-icon {
                 opacity: 0.8;
             }
         }
@@ -193,6 +178,11 @@ body {
                 &:last-child {
                     margin-bottom: 0;
                 }
+
+                b,
+                strong {
+                    color: $black;
+                }
             }
         }
 
@@ -231,34 +221,95 @@ body {
             height: 1px;
             left: 0;
         }
+    }
 
-        &:not(.faq-item-active) .faq-item-que {
-            background-color: $acc-light;
+    &:not(.accordion-item-active) {
+        .accordion-item-que {
             color: $white;
+            background-color: $acc-light;
         }
     }
 
-    .faq-item-active {
-        .faq-item-que {
+    .accordion-item-active {
+        .accordion-item-que {
             color: $white;
             background-color: $acc-dark;
         }
 
-        .faq-item-que-icon {
+        .accordion-item-que-icon {
             transform: rotate(45deg);
         }
 
-        .faq-item-ans {
+        .accordion-item-ans {
             pointer-events: initial;
             padding: 25px;
         }
 
-        .faq-item-ans-text {
+        .accordion-item-ans-text {
             opacity: 1;
             top: 0;
             transition:
                 top 0.3s ease 0.2s,
                 opacity 0.3s ease 0.2s;
+        }
+    }
+}
+
+.effective-date {
+    text-align: right;
+}
+
+.faq-accordion {
+    padding: 100px;
+    background-color: _palette(fg-bold);
+
+    .accordion-container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+.privacy-accordion {
+    .accordion {
+        &-header {
+            margin: 75px 0 25px;
+            font-size: 28px;
+            font-weight: 500;
+            color: $white;
+            text-align: left;
+        }
+
+        &-items {
+            &::after {
+                border: 1px solid $white;
+            }
+        }
+
+        &-item {
+            color: $white;
+        }
+
+        &:not(.accordion-item-active) {
+            .accordion-item-que {
+                color: $acc-dark;
+                background-color: $white;
+            }
+        }
+
+        &-item-active {
+            .accordion-item-que {
+                color: $black !important;
+            }
+        }
+
+        &-item-ans {
+            p {
+                b,
+                strong {
+                    color: $white;
+                }
+            }
         }
     }
 }
