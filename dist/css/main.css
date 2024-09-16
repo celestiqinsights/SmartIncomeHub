@@ -500,10 +500,14 @@ body {
   color: #eb3b5a;
 }
 
-#footer ul {
+.center, #footer ul {
   display: flex;
-  justify-content: center;
+  width: 100%;
   text-align: center;
+  justify-content: center;
+}
+
+#footer ul {
   align-items: center;
 }
 #footer ul li {

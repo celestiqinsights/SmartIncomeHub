@@ -542,11 +542,16 @@ body {
     }
 }
 
+.center {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
 #footer {
     ul {
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        @extend .center;
         align-items: center;
 
         li {
