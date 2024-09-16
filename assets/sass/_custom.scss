@@ -256,6 +256,7 @@ body {
 }
 
 .effective-date {
+    margin: 0 0 75px;
     text-align: right;
 }
 
@@ -270,7 +271,9 @@ body {
     }
 }
 
-.privacy-accordion {
+.full-page-accordion {
+    margin-bottom: 75px;
+
     .accordion {
         &-header {
             margin: 75px 0 25px;

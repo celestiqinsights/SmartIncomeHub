@@ -211,6 +211,7 @@ body {
 }
 
 .effective-date {
+  margin: 0 0 75px;
   text-align: right;
 }
 
@@ -224,28 +225,31 @@ body {
   margin: 0 auto;
 }
 
-.privacy-accordion .accordion-header {
+.full-page-accordion {
+  margin-bottom: 75px;
+}
+.full-page-accordion .accordion-header {
   margin: 75px 0 25px;
   font-size: 28px;
   font-weight: 500;
   color: #ffffff;
   text-align: left;
 }
-.privacy-accordion .accordion-items::after {
+.full-page-accordion .accordion-items::after {
   border: 1px solid #ffffff;
 }
-.privacy-accordion .accordion-item {
+.full-page-accordion .accordion-item {
   color: #ffffff;
 }
-.privacy-accordion .accordion:not(.accordion-item-active) .accordion-item-que {
+.full-page-accordion .accordion:not(.accordion-item-active) .accordion-item-que {
   color: #261c3e;
   background-color: #ffffff;
 }
-.privacy-accordion .accordion-item-active .accordion-item-que {
+.full-page-accordion .accordion-item-active .accordion-item-que {
   color: #000000 !important;
 }
-.privacy-accordion .accordion-item-ans p b,
-.privacy-accordion .accordion-item-ans p strong {
+.full-page-accordion .accordion-item-ans p b,
+.full-page-accordion .accordion-item-ans p strong {
   color: #ffffff;
 }
 
