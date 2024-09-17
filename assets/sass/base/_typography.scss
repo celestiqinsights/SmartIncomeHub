@@ -29,6 +29,15 @@ textarea {
 	}
 }
 
+body.hindi {
+	font-family: _font(family-hindi);
+	input,
+	select,
+	textarea {
+		font-family: _font(family-hindi);
+	}
+}
+
 a {
 	@include vendor(
 		'transition',

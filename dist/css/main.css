@@ -26,6 +26,10 @@ body {
   min-width: 175px;
   padding: 0 3.25em;
 }
+.lang-selection .lang-btn-wrapper > button#hindi-btn {
+  font-family: "Noto Sans Devanagari", sans-serif;
+  letter-spacing: 0;
+}
 
 .logo-wrapper {
   max-width: 300px;
@@ -715,6 +719,15 @@ textarea {
   textarea {
     font-size: 11pt;
   }
+}
+
+body.hindi {
+  font-family: "Noto Sans Devanagari", sans-serif;
+}
+body.hindi input,
+body.hindi select,
+body.hindi textarea {
+  font-family: "Noto Sans Devanagari", sans-serif;
 }
 
 a {

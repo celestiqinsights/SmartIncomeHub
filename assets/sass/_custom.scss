@@ -25,6 +25,11 @@ body {
         > button {
             min-width: 175px;
             padding: 0 3.25em;
+
+            &#hindi-btn {
+                font-family: 'Noto Sans Devanagari', sans-serif;
+                letter-spacing: 0;
+            }
         }
     }
 }
