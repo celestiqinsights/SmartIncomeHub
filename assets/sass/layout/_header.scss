@@ -4,7 +4,7 @@
 	@include vendor('display', 'flex');
 	background-color: _palette(accent1);
 	cursor: default;
-	padding: 1.75em 2em;
+	padding: 0 2em;
 
 	> .title {
 		border: 0;
@@ -12,6 +12,12 @@
 		display: block;
 		font-size: 1.25em;
 		font-weight: _font(weight-bold);
+
+		img {
+			max-height: 100%; // Ensure the logo does not exceed header height
+			height: auto;
+			width: auto; // Maintain aspect ratio
+		}
 	}
 
 	> nav {
@@ -36,7 +42,7 @@
 					border: 0;
 					color: _palette(fg-light);
 					display: inline-block;
-					font-size: 0.6em;
+					font-size: 14px;
 					font-weight: _font(weight-bold);
 					letter-spacing: _font(kerning-alt);
 					text-transform: uppercase;
@@ -58,7 +64,7 @@
 	}
 
 	@include breakpoint('<=small') {
-		padding: 1em 1.5em;
+		padding: 0.5em 1.5em;
 	}
 
 	@include breakpoint('<=xsmall') {
@@ -84,6 +90,125 @@
 						line-height: 6em;
 					}
 				}
+			}
+		}
+	}
+}
+
+/* Base Styles */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-height: 100px;
+	z-index: 5;
+
+	.title {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		max-height: calc(100% - 30px);
+	}
+
+	.logo-wrapper {
+		max-width: 200px;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.hamburger {
+		display: none; // Hide hamburger by default
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 10px 15px;
+		position: relative;
+		z-index: 10; // Ensure it’s above other elements
+		border-radius: 0;
+
+		&::after {
+			display: none;
+		}
+
+		.bar {
+			display: block;
+			width: 25px;
+			height: 3px;
+			background-color: $white; // Adjust based on your design
+			margin: 5px 0;
+			transition: all 0.3s ease; // Smooth transition for animation
+
+			// First bar styles
+			&:nth-child(1) {
+				transform: rotate(0); // Default position
+			}
+
+			// Second bar styles
+			&:nth-child(2) {
+				opacity: 1; // Default opacity
+			}
+
+			// Third bar styles
+			&:nth-child(3) {
+				transform: rotate(0); // Default position
+			}
+		}
+
+		&.active {
+			.bar:nth-child(1) {
+				transform: rotate(45deg);
+				position: relative;
+				top: 8px;
+			}
+
+			.bar:nth-child(2) {
+				opacity: 0;
+			}
+
+			.bar:nth-child(3) {
+				transform: rotate(-45deg);
+				position: relative;
+				top: -8px;
+			}
+		}
+	}
+}
+
+/* Mobile Styles */
+/* Mobile Styles */
+@media (max-width: 768px) {
+	#header {
+		.hamburger {
+			display: block; // Show hamburger on mobile
+		}
+
+		nav {
+			display: flex; // Always display as flex but controlled by opacity
+			position: absolute;
+			top: 100px; // Adjust based on header height
+			right: 0;
+			width: 100%;
+			padding: 10px 0;
+			justify-content: center;
+			background-color: $acc-dark;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+			transition:
+				opacity 0.5s ease,
+				max-height 0.5s ease;
+			opacity: 0; // Start hidden
+			max-height: 0; // Start collapsed
+			overflow: hidden; // Hide overflowing content
+
+			&.active {
+				opacity: 1; // Make visible
+				max-height: 500px; // Set to a high value to accommodate content height
 			}
 		}
 	}

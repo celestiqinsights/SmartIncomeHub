@@ -26,5 +26,10 @@ $(document).ready(function () {
 
     var currentYear = new Date().getFullYear();
     $('#copyright-year').text(currentYear);
+
+    $('.hamburger').on('click', function () {
+        $('.nav-menu').toggleClass('active');
+        $(this).toggleClass('active');
+    });
 });
 
