@@ -317,16 +317,17 @@ body {
   width: calc(33.3% - 30px);
   box-sizing: border-box;
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
   .pricing-section .column {
     flex: 50%;
     display: block;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .pricing-section .column {
     flex: 100%;
     display: block;
+    padding: 15px 10px;
   }
 }
 .pricing-section .pricing-card {
@@ -419,6 +420,11 @@ body {
 .pricing-section .pricing-card ul li strong {
   color: #000000;
 }
+@media screen and (max-width: 768px) {
+  .pricing-section .pricing-card ul li {
+    font-size: 1em;
+  }
+}
 .pricing-section .pricing-card .buy-button-box {
   margin: 30px;
 }
@@ -438,23 +444,40 @@ body {
   color: #eb3b5a;
 }
 
-.center, #footer ul {
+.center, #footer .menu {
   display: flex;
   width: 100%;
   text-align: center;
   justify-content: center;
 }
 
-#footer ul {
+#footer .menu {
   align-items: center;
 }
-#footer ul li {
+#footer .menu li {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 580px) {
+  #footer .menu {
+    flex-wrap: wrap;
+  }
+  #footer .menu li {
+    width: 100%;
+    border-left: 0;
+    line-height: inherit;
+    margin: 0.5em 0 0 0;
+    padding-left: 0;
+  }
 }
 #footer #copyright-year {
   display: inline-block;
   margin: 0 5px;
+}
+@media screen and (max-width: 580px) {
+  #footer #copyright-year {
+    margin: 0;
+  }
 }
 #footer .brand {
   display: inline-block;
@@ -2022,7 +2045,7 @@ button,
   color: #ffffff !important;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.6em;
+  font-size: 0.75em;
   font-weight: 600;
   height: calc(4.75em + 2px);
   letter-spacing: 0.25em;
