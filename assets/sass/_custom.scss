@@ -23,12 +23,17 @@ body {
         margin: 0 auto;
 
         > button {
-            min-width: 175px;
-            padding: 0 3.25em;
+            min-width: 185px;
+            height: 70px;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 0 1em;
+            line-height: 70px;
 
             &#hindi-btn {
                 font-family: 'Noto Sans Devanagari', sans-serif;
                 letter-spacing: 0;
+                font-size: 22px;
             }
         }
     }
