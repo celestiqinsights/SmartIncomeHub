@@ -428,6 +428,7 @@ body {
 }
 
 .designed-by {
+  position: relative;
   display: inline-block;
   margin-left: 10px;
   font-size: 24px;
@@ -450,6 +451,14 @@ body {
 #footer ul li {
   display: flex;
   align-items: center;
+}
+#footer #copyright-year {
+  display: inline-block;
+  margin: 0 5px;
+}
+#footer .brand {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 html, body, div, span, applet, object,

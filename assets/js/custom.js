@@ -23,5 +23,8 @@ $(document).ready(function () {
 
     // Initialize all functionalities
     faqAccordion();
+
+    var currentYear = new Date().getFullYear();
+    $('#copyright-year').text(currentYear);
 });
 
