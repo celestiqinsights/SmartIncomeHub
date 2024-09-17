@@ -14,7 +14,13 @@ body {
   overflow: hidden;
 }
 .lang-selection .lang-selection-wrapper {
+  padding: 0 25px;
+  margin: 0 0 50px;
   text-align: center;
+}
+.lang-selection .lang-selection-wrapper h1 {
+  margin-bottom: 25px;
+  font-size: 1.5em;
 }
 .lang-selection .lang-btn-wrapper {
   display: flex;
@@ -23,7 +29,7 @@ body {
   margin: 0 auto;
 }
 .lang-selection .lang-btn-wrapper > button {
-  min-width: 185px;
+  min-width: 175px;
   height: 70px;
   font-size: 18px;
   font-weight: 500;
