@@ -48,13 +48,17 @@
 					&.active {
 						color: _palette(fg-bold);
 					}
+
+					@include breakpoint('<=xlarge') {
+						color: $gray !important;
+					}
 				}
 			}
 		}
 	}
 
 	@include breakpoint('<=small') {
-		padding: 1em 2em;
+		padding: 1em 1.5em;
 	}
 
 	@include breakpoint('<=xsmall') {

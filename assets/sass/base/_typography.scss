@@ -6,7 +6,7 @@ select,
 textarea {
 	color: _palette(fg);
 	font-family: _font(family);
-	font-size: 16.5pt !important;
+	font-size: 16.5pt;
 	font-weight: _font(weight);
 	line-height: 1.75;
 	letter-spacing: 0.5px;
@@ -18,14 +18,7 @@ textarea {
 
 	@include breakpoint('<=xlarge') {
 		font-size: 13pt;
-	}
-
-	@include breakpoint('<=large') {
-		font-size: 12pt;
-	}
-
-	@include breakpoint('<=xxsmall') {
-		font-size: 11pt;
+		color: $gray;
 	}
 }
 

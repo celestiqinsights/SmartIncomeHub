@@ -21,6 +21,10 @@
 		.menu {
 			font-size: 0.8em;
 			color: _palette(border);
+
+			@include breakpoint('<=xlarge') {
+				color: $gray;
+			}
 		}
 	}
 
