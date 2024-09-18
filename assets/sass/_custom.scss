@@ -58,6 +58,12 @@ body {
     }
 }
 
+#intro {
+    .logo-wrapper {
+        max-width: 300px;
+    }
+}
+
 /* Accordion Style */
 .accordion {
     &-header {

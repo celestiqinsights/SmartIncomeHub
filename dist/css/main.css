@@ -54,6 +54,10 @@ body {
   }
 }
 
+#intro .logo-wrapper {
+  max-width: 300px;
+}
+
 /* Accordion Style */
 .accordion-header {
   margin: 0 0 25px;
