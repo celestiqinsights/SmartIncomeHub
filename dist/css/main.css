@@ -3493,11 +3493,7 @@ body.is-ie .wrapper.fullscreen {
     text-align: inherit;
   }
   #header > nav > ul > li {
-    margin-left: 1.5em;
-  }
-  #header > nav > ul > li a {
-    height: 6em;
-    line-height: 6em;
+    margin: 0 1em;
   }
 }
 
