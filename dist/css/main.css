@@ -3457,9 +3457,14 @@ body.is-ie .wrapper.fullscreen {
 }
 #header > nav > ul > li {
   display: inline-block;
-  margin: 0 2em;
+  margin: 0 1em;
   padding: 0;
   vertical-align: middle;
+}
+@media screen and (max-width: 736px) {
+  #header > nav > ul > li {
+    margin: 0 2em;
+  }
 }
 #header > nav > ul > li a {
   border: 0;

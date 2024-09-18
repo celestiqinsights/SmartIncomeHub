@@ -89,9 +89,13 @@
 
 			> li {
 				display: inline-block;
-				margin: 0 2em;
+				margin: 0 1em;
 				padding: 0;
 				vertical-align: middle;
+
+				@include breakpoint('<=small') {
+					margin: 0 2em;
+				}
 
 				a {
 					border: 0;
