@@ -89,13 +89,9 @@
 
 			> li {
 				display: inline-block;
-				margin-left: 1.75em;
+				margin: 0 2em;
 				padding: 0;
 				vertical-align: middle;
-
-				&:first-child {
-					margin-left: 0;
-				}
 
 				a {
 					border: 0;

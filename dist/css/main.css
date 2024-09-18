@@ -3451,12 +3451,9 @@ body.is-ie .wrapper.fullscreen {
 }
 #header > nav > ul > li {
   display: inline-block;
-  margin-left: 1.75em;
+  margin: 0 2em;
   padding: 0;
   vertical-align: middle;
-}
-#header > nav > ul > li:first-child {
-  margin-left: 0;
 }
 #header > nav > ul > li a {
   border: 0;
