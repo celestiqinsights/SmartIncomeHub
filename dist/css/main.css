@@ -521,6 +521,14 @@ body {
   font-size: 18px;
   line-height: 1.75;
 }
+.hindi input[type=submit],
+.hindi input[type=reset],
+.hindi input[type=button],
+.hindi button,
+.hindi .button {
+  font-size: 1em;
+  letter-spacing: 0 !important;
+}
 
 html,
 body,
@@ -2077,13 +2085,11 @@ button,
   color: #ffffff !important;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.6em;
+  font-size: 0.75em;
   font-weight: 600;
-  height: calc(4.75em + 2px);
   letter-spacing: 0.25em;
-  line-height: 4.75em;
   outline: 0;
-  padding: 0 3.75em;
+  padding: 15px 3.5em;
   position: relative;
   text-align: center;
   text-decoration: none;

@@ -623,4 +623,13 @@ body {
         font-size: 18px;
         line-height: 1.75;
     }
+
+    input[type='submit'],
+    input[type='reset'],
+    input[type='button'],
+    button,
+    .button {
+        font-size: 1em;
+        letter-spacing: 0 !important;
+    }
 }
