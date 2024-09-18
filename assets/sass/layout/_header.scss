@@ -23,20 +23,6 @@
 		font-weight: _font(weight-bold);
 		height: 100%;
 		max-height: calc(100% - 30px);
-
-		img {
-			max-height: 100%; // Ensure the logo does not exceed header height
-			height: auto;
-			width: auto; // Maintain aspect ratio
-		}
-	}
-
-	.logo-wrapper {
-		max-width: 200px;
-
-		img {
-			max-width: 100%;
-		}
 	}
 
 	.hamburger {
@@ -141,8 +127,6 @@
 	}
 
 	@include breakpoint('<=xsmall') {
-		display: block;
-		padding: 0 2em;
 		text-align: left;
 
 		.title {

@@ -42,6 +42,18 @@ body {
   font-size: 22px;
 }
 
+.logo-wrapper {
+  max-width: 150px;
+}
+.logo-wrapper img {
+  max-width: 100%;
+}
+@media screen and (max-width: 640px) {
+  .logo-wrapper {
+    max-width: 125px;
+  }
+}
+
 /* Accordion Style */
 .accordion-header {
   margin: 0 0 25px;
@@ -3383,17 +3395,6 @@ body.is-ie .wrapper.fullscreen {
   height: 100%;
   max-height: calc(100% - 30px);
 }
-#header .title img {
-  max-height: 100%;
-  height: auto;
-  width: auto;
-}
-#header .logo-wrapper {
-  max-width: 200px;
-}
-#header .logo-wrapper img {
-  max-width: 100%;
-}
 #header .hamburger {
   display: none;
   background: none;
@@ -3484,8 +3485,6 @@ body.is-ie .wrapper.fullscreen {
 }
 @media screen and (max-width: 480px) {
   #header {
-    display: block;
-    padding: 0 2em;
     text-align: left;
   }
   #header .title {
