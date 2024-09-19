@@ -14,6 +14,7 @@ body {
   overflow: hidden;
 }
 .lang-selection .lang-selection-wrapper {
+  width: 100%;
   padding: 0 25px;
   margin: 0 0 50px;
   text-align: center;
@@ -24,9 +25,9 @@ body {
 }
 .lang-selection .lang-btn-wrapper {
   display: flex;
-  justify-content: space-around;
-  max-width: 75%;
+  max-width: 750px;
   margin: 0 auto;
+  justify-content: space-around;
 }
 .lang-selection .lang-btn-wrapper > button {
   min-width: 200px;
@@ -2704,19 +2705,19 @@ input[type=radio] + label:before {
   color: #5e42a6;
 }
 .wrapper.style1-alt .icon.major:before {
-  color: #493382;
+  color: rgb(73.3362068966, 51.4913793103, 129.5086206897);
 }
 .wrapper.style2 .icon.major:before {
   color: #5052b5;
 }
 .wrapper.style2-alt .icon.major:before {
-  color: #3e4094;
+  color: rgb(62.4096385542, 64.0963855422, 147.5903614458);
 }
 .wrapper.style3 .icon.major:before {
   color: #b74e91;
 }
 .wrapper.style3-alt .icon.major:before {
-  color: #953d75;
+  color: rgb(149.2771084337, 60.7228915663, 117.2289156627);
 }
 
 /* Image */
@@ -3269,25 +3270,25 @@ table.alt tfoot {
   }
 }
 .wrapper.alt {
-  background-color: #261c3e;
+  background-color: rgb(38.2284482759, 28.0862068966, 62.4137931034);
 }
 .wrapper.style1 {
   background-color: #5e42a6;
 }
 .wrapper.style1-alt {
-  background-color: #493382;
+  background-color: rgb(73.3362068966, 51.4913793103, 129.5086206897);
 }
 .wrapper.style2 {
   background-color: #5052b5;
 }
 .wrapper.style2-alt {
-  background-color: #3e4094;
+  background-color: rgb(62.4096385542, 64.0963855422, 147.5903614458);
 }
 .wrapper.style3 {
   background-color: #b74e91;
 }
 .wrapper.style3-alt {
-  background-color: #953d75;
+  background-color: rgb(149.2771084337, 60.7228915663, 117.2289156627);
 }
 .wrapper.style4 {
   background-color: #5d79d6;
@@ -3800,7 +3801,7 @@ body.is-ie #sidebar > .inner {
   width: 100%;
 }
 #sidebar nav a:before {
-  background: #3c2c62;
+  background: rgb(59.7715517241, 43.9137931034, 97.5862068966);
 }
 #sidebar nav a:after {
   background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
