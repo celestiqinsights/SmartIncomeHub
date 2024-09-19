@@ -289,182 +289,6 @@ body {
   color: #ffffff;
 }
 
-/* Card Themes - Start */
-.basic .pricing-header {
-  background-color: #4b7bec;
-}
-.basic .price-circle {
-  border: 10px solid #4b7bec;
-  transition: all 0.4s;
-}
-.basic:hover .price-circle {
-  border-width: 5px;
-}
-.basic .buy-now {
-  background-image: none !important;
-  background-color: #4b7bec !important;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
-}
-
-.echo .pricing-header {
-  background-color: #f7b731;
-}
-.echo .price-circle {
-  border: 10px solid #f7b731;
-  transition: all 0.4s;
-}
-.echo:hover .price-circle {
-  border-width: 5px;
-}
-.echo .buy-now {
-  background-image: none !important;
-  background-color: #f7b731 !important;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
-}
-
-.pro .pricing-header {
-  background-color: #26de81;
-}
-.pro .price-circle {
-  border: 10px solid #26de81;
-  transition: all 0.4s;
-}
-.pro:hover .price-circle {
-  border-width: 5px;
-}
-.pro .buy-now {
-  background-image: none !important;
-  background-color: #26de81 !important;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
-}
-
-.container {
-  height: auto;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-
-.pricing-section .column {
-  flex: 25%;
-  padding: 10px;
-  width: calc(33.3% - 30px);
-  box-sizing: border-box;
-}
-@media screen and (max-width: 1024px) {
-  .pricing-section .column {
-    flex: 50%;
-    display: block;
-  }
-}
-@media screen and (max-width: 768px) {
-  .pricing-section .column {
-    flex: 100%;
-    display: block;
-    padding: 15px 10px;
-  }
-}
-.pricing-section .pricing-card {
-  height: 100%;
-  background-color: #ffffff;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  position: relative;
-  transition: all 0.4s;
-}
-.pricing-section .pricing-card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
-}
-.pricing-section .pricing-card .popular {
-  position: absolute;
-  top: 0;
-  right: 5%;
-  width: auto;
-  padding: 10px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: #eb3b5a;
-  color: #ffffff;
-  font-size: 12px;
-  z-index: 1;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.pricing-section .pricing-card .pricing-header {
-  width: 100%;
-  height: 150px;
-  position: relative;
-  border-radius: 20px 20px 0 0;
-  -webkit-border-radius: 20px 20px 0 0;
-  -moz-border-radius: 20px 20px 0 0;
-}
-.pricing-section .pricing-card .pricing-header .plan-title {
-  font-size: 24px;
-  color: #ffffff;
-  position: relative;
-  top: 25%;
-}
-.pricing-section .pricing-card .pricing-header .price-circle {
-  width: calc(33.3% - 30px);
-  width: 135px;
-  height: 135px;
-  border-radius: 100%;
-  left: calc(50% - 60px);
-  top: 60%;
-  background-color: #000000;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pricing-section .pricing-card .pricing-header .price-circle .info {
-  display: none;
-  font-size: 12px;
-  font-weight: 600;
-  color: gray;
-}
-.pricing-section .pricing-card .pricing-header .price-circle .price-title {
-  display: block;
-  font-size: 36px;
-  padding: 0;
-  font-weight: 600;
-}
-.pricing-section .pricing-card .pricing-header .price-circle .price-title small {
-  font-size: 18px;
-}
-.pricing-section .pricing-card .pricing-header h2 {
-  position: relative;
-  top: 40%;
-  color: #ffffff;
-}
-.pricing-section .pricing-card ul {
-  margin: 80px 0 0;
-  padding: 0;
-}
-.pricing-section .pricing-card ul li {
-  list-style-type: none;
-  display: block;
-  padding: 15px 0 15px 0;
-  margin: 0;
-  border-bottom: 1px solid #f2f2f2;
-  font-size: 0.75em;
-  color: #000000;
-}
-.pricing-section .pricing-card ul li strong {
-  color: #000000;
-}
-@media screen and (max-width: 768px) {
-  .pricing-section .pricing-card ul li {
-    font-size: 1em;
-  }
-}
-.pricing-section .pricing-card .buy-button-box {
-  margin: 30px;
-}
-
 .outro {
   text-align: center;
 }
@@ -534,6 +358,179 @@ body {
 .hindi .button {
   font-size: 1em;
   letter-spacing: 0 !important;
+}
+
+/* Card Themes - Start */
+.basic .price-circle {
+  border: 10px solid #4b7bec;
+}
+.basic .buy-now,
+.basic .pricing-header {
+  background-color: #4b7bec !important;
+}
+
+.echo .price-circle {
+  border: 10px solid #f7b731;
+}
+.echo .buy-now,
+.echo .pricing-header {
+  background-color: #f7b731 !important;
+}
+
+.pro .price-circle {
+  border: 10px solid #26de81;
+}
+.pro .buy-now,
+.pro .pricing-header {
+  background-color: #26de81 !important;
+}
+
+.max .price-circle {
+  border: 10px solid #ef5a6f;
+}
+.max .buy-now,
+.max .pricing-header {
+  background-color: #ef5a6f !important;
+}
+
+.pricing-section .container {
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.pricing-section .column {
+  flex: 25%;
+  padding: 15px;
+  width: calc(25% - 30px);
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  .pricing-section .column {
+    flex: 50%;
+    padding: 15px 10px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .pricing-section .column {
+    flex: 100%;
+  }
+}
+.pricing-section .pricing-card {
+  position: relative;
+  height: 100%;
+  background-color: #ffffff;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+.pricing-section .pricing-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+.pricing-section .pricing-card:hover .price-circle {
+  border-width: 5px;
+}
+.pricing-section .pricing-card .popular {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: auto;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #eb3b5a;
+  color: #ffffff;
+  font-size: 12px;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.pricing-section .pricing-card .pricing-header {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+}
+.pricing-section .pricing-card .pricing-header .plan-title {
+  position: relative;
+  top: 25%;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e201e;
+}
+.pricing-section .pricing-card .pricing-header .price-circle {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #1e201e;
+  transition: all 0.4s;
+}
+.pricing-section .pricing-card .pricing-header .price-circle .info {
+  display: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: gray;
+}
+.pricing-section .pricing-card .pricing-header .price-circle .price-title {
+  display: block;
+  font-size: 32px;
+  padding: 0;
+  font-weight: 600;
+}
+.pricing-section .pricing-card .pricing-header .price-circle .price-title small {
+  font-size: 18px;
+}
+.pricing-section .pricing-card .pricing-header h2 {
+  position: relative;
+  top: 40%;
+  color: #ffffff;
+}
+.pricing-section .pricing-card ul {
+  margin: 100px 0 0;
+  padding: 0;
+}
+.pricing-section .pricing-card ul li {
+  list-style-type: none;
+  display: block;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 0.75em;
+  color: #000000;
+}
+.pricing-section .pricing-card ul li strong {
+  color: #000000;
+}
+@media screen and (max-width: 540px) {
+  .pricing-section .pricing-card ul li {
+    font-size: 1em;
+  }
+}
+.pricing-section .pricing-card .buy-button-box {
+  margin: 25px 0 30px;
+}
+.pricing-section .pricing-card .buy-button-box .buy-now {
+  min-width: 75%;
+  padding: 15px;
+  background-image: none !important;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 768px) {
+  .pricing-section .pricing-card .buy-button-box .buy-now {
+    font-size: 1em;
+  }
 }
 
 html,
