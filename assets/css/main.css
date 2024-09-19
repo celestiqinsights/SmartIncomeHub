@@ -25,16 +25,17 @@ body {
 .lang-selection .lang-btn-wrapper {
   display: flex;
   justify-content: space-around;
-  max-width: 420px;
+  max-width: 75%;
   margin: 0 auto;
 }
 .lang-selection .lang-btn-wrapper > button {
-  min-width: 175px;
+  min-width: 200px;
   height: 70px;
   font-size: 18px;
   font-weight: 500;
   padding: 0 1em;
   line-height: 70px;
+  margin: 0 25px;
 }
 .lang-selection .lang-btn-wrapper > button#hindi-btn {
   font-family: "Noto Sans Devanagari", sans-serif;
