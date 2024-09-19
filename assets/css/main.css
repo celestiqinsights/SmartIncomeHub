@@ -25,23 +25,36 @@ body {
 }
 .lang-selection .lang-btn-wrapper {
   display: flex;
+  width: 100%;
   max-width: 750px;
   margin: 0 auto;
   justify-content: space-around;
 }
 .lang-selection .lang-btn-wrapper > button {
-  min-width: 200px;
+  width: 30%;
+  max-width: 200px;
   height: 70px;
   font-size: 18px;
   font-weight: 500;
-  padding: 0 1em;
+  padding: 0 5px;
   line-height: 70px;
-  margin: 0 25px;
+  margin: 0 15px;
 }
 .lang-selection .lang-btn-wrapper > button#hindi-btn {
   font-family: "Noto Sans Devanagari", sans-serif;
   letter-spacing: 0;
   font-size: 22px;
+}
+@media screen and (max-width: 640px) {
+  .lang-selection .lang-btn-wrapper {
+    flex-wrap: wrap;
+  }
+  .lang-selection .lang-btn-wrapper > button {
+    width: 50%;
+    max-width: 100%;
+    min-width: 225px;
+    margin: 10px 25px;
+  }
 }
 
 .logo-wrapper {
