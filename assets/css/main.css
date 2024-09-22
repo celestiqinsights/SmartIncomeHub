@@ -94,14 +94,14 @@ body.modal-open {
 .modal-content .modal-body h2 {
   margin: 0 0 30px;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff;
 }
 
 .modal-content .modal-body h4 {
-  margin: 1rem;
-  font-size: 24px;
-  color: #e9e9e9;
+  margin: 1.5em;
+  font-size: 20px;
+  color: #1e201e;
 }
 
 .modal-content .modal-body h3 {
@@ -727,6 +727,10 @@ body {
 
 .contact-us-section {
   background-color: #1b1330;
+}
+
+.numeric-value {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 html,
@@ -2684,7 +2688,7 @@ label {
 }
 label.error {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 16px;
   color: #ff004d;
   font-weight: 400 !important;
 }

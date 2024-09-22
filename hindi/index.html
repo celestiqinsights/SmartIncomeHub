@@ -162,19 +162,19 @@
 							</div>
 							<ul class="pricing-items">
 								<li>
-									<strong>30</strong> दिनों का काम
+									<strong><span class="numeric-value"></span></strong> दिनों का काम
 								</li>
 								<li>
-									<strong>10 टास्क</strong> रोज़
+									<strong><span class="numeric-value"></span> टास्क</strong> रोज़
 								</li>
 								<li>
-									<strong>₹75</strong> प्रति टास्क कमाएं
+									<strong><span class="numeric-value"></span></strong> प्रति टास्क कमाएं
 								</li>
 								<li>
-									<strong>₹750</strong> रोज़ कमाएं
+									<strong><span class="numeric-value"></span></strong> रोज़ कमाएं
 								</li>
 								<li>
-									<strong>₹22,500</strong> महीने में कमाएं
+									<strong><span class="numeric-value"></span></strong> महीने में कमाएं
 								</li>
 							</ul>
 							<div class="buy-button-box">
@@ -196,19 +196,19 @@
 							</div>
 							<ul class="pricing-items">
 								<li>
-									<strong>30</strong> दिनों का काम
+									<strong><span class="numeric-value"></span></strong> दिनों का काम
 								</li>
 								<li>
-									<strong>10 टास्क</strong> रोज़
+									<strong><span class="numeric-value"></span> टास्क</strong> रोज़
 								</li>
 								<li>
-									<strong>₹175</strong> प्रति टास्क कमाएं
+									<strong><span class="numeric-value"></span></strong> प्रति टास्क कमाएं
 								</li>
 								<li>
-									<strong>₹1,750</strong> रोज़ कमाएं
+									<strong><span class="numeric-value"></span></strong> रोज़ कमाएं
 								</li>
 								<li>
-									<strong>₹52,500</strong> महीने में कमाएं
+									<strong><span class="numeric-value"></span></strong> महीने में कमाएं
 								</li>
 							</ul>
 							<div class="buy-button-box">
@@ -231,19 +231,19 @@
 							</div>
 							<ul class="pricing-items">
 								<li>
-									<strong>30</strong> दिनों का काम
+									<strong><span class="numeric-value"></span></strong> दिनों का काम
 								</li>
 								<li>
-									<strong>10 टास्क</strong> रोज़
+									<strong><span class="numeric-value"></span> टास्क</strong> रोज़
 								</li>
 								<li>
-									<strong>₹300</strong> प्रति टास्क कमाएं
+									<strong><span class="numeric-value"></span></strong> प्रति टास्क कमाएं
 								</li>
 								<li>
-									<strong>₹3,000</strong> रोज़ कमाएं
+									<strong><span class="numeric-value"></span></strong> रोज़ कमाएं
 								</li>
 								<li>
-									<strong>₹90,000</strong> महीने में कमाएं
+									<strong><span class="numeric-value"></span></strong> महीने में कमाएं
 								</li>
 							</ul>
 							<div class="buy-button-box">
@@ -265,19 +265,19 @@
 							</div>
 							<ul class="pricing-items">
 								<li>
-									<strong>30</strong> दिनों का काम
+									<strong><span class="numeric-value"></span></strong> दिनों का काम
 								</li>
 								<li>
-									<strong>10 टास्क</strong> रोज़
+									<strong><span class="numeric-value"></span> टास्क</strong> रोज़
 								</li>
 								<li>
-									<strong>₹500</strong> प्रति टास्क कमाएं
+									<strong><span class="numeric-value"></span></strong> प्रति टास्क कमाएं
 								</li>
 								<li>
-									<strong>₹5,000</strong> रोज़ कमाएं
+									<strong><span class="numeric-value"></span></strong> रोज़ कमाएं
 								</li>
 								<li>
-									<strong>₹1,50,000</strong> महीने में कमाएं
+									<strong><span class="numeric-value"></span></strong> महीने में कमाएं
 								</li>
 							</ul>
 							<div class="buy-button-box">
@@ -293,25 +293,29 @@
 		</section>
 
 		<!-- Four -->
-		<section id="four" class="wrapper style1 fade-up">
+		<section id="four" class="wrapper fade-up contact-us-section">
 			<div class="inner">
 				<h2>संपर्क करें</h2>
 				<p>अगर आपके पास कोई सवाल है या आप जानना चाहते हैं कि आप हमारे साथ कैसे कमाई कर सकते हैं, तो हम आपकी मदद के लिए यहाँ हैं! आज ही हमें मैसेज करें, और हम बात करेंगे कि हमारा आसान प्रोसेस आपके लिए कैसे काम कर सकता है। आपकी आर्थिक स्वतंत्रता की यात्रा एक साधारण संदेश से शुरू होती है!</p>
 				<div class="split style1">
 					<section>
-						<form method="post" action="#">
+						<form method="post" id="contactForm">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">नाम</label>
 									<input type="text" name="name" id="name" required />
 								</div>
 								<div class="field half">
+									<label for="phone">फोन</label>
+									<input type="tel" name="phone" id="phone" required />
+								</div>
+								<div class="field">
 									<label for="email">ईमेल</label>
-									<input type="email" name="email" id="email" required />
+									<input type="text" name="email" id="email" required />
 								</div>
 								<div class="field">
 									<label for="message">संदेश</label>
-									<textarea name="message" id="message" rows="5" required></textarea>
+									<textarea name="message" id="message" rows="5" required maxlength="1500"></textarea>
 								</div>
 							</div>
 							<ul class="actions">
@@ -322,27 +326,27 @@
 					<section>
 						<ul class="contact">
 							<li>
-								<h3>Address</h3>
-								<span>105, Bhartiya City Tech Park<br />
-									Thanisandra Main Road, Bangalore, Karnataka<br />
+								<h3>पता</h3>
+								<span>105, भारतीय सिटी टेक पार्क<br />
+									थानिसंदरा मेन रोड, बैंगलोर, कर्नाटका<br />
 									560064</span>
 							</li>
 							<li>
-								<h3>Email</h3>
+								<h3>ईमेल</h3>
 								<a href="mailto:smartincomehub.care@gmail.com">smartincomehub.care@gmail.com</a>
 							</li>
 							<!-- <li>
-								<h3>Phone</h3>
+								<h3>फोन</h3>
 								<span>(000) 000-0000</span>
 							</li> -->
 							<li>
-								<h3>Social</h3>
+								<h3>सोशल</h3>
 								<ul class="icons">
-									<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<!-- <li><a href="#" class="icon brands fa-youtube-in"><span class="label">Youtube</span></a></li> -->
+									<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">ट्विटर</span></a></li> -->
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">फेसबुक</span></a></li>
+									<!-- <li><a href="#" class="icon brands fa-github"><span class="label">गिटहब</span></a></li> -->
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">इंस्टाग्राम</span></a></li>
+									<!-- <li><a href="#" class="icon brands fa-youtube-in"><span class="label">यूट्यूब</span></a></li> -->
 								</ul>
 							</li>
 						</ul>
@@ -370,13 +374,42 @@
 		</div>
 	</footer>
 
+	<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header ftco-degree-bg">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#thankYouModal">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</button>
+				</div>
+				<div class="modal-body pt-md-0 pb-md-5 text-center">
+					<h2>हमसे संपर्क करने के लिए धन्यवाद!</h2>
+					<div class="icon d-flex align-items-center justify-content-center">
+						<img src="../assets/images/email.svg" alt="Email Confirmation Background" class="img-fluid" />
+					</div>
+					<h4 class="mb-2" id="thankYouModalMessage"></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="backdrop"></div>
+	<div class="loading-backdrop">
+		<div class="loading-icon-wrapper">
+			<img src="../assets/images/loading-icon.svg" alt="Loading..." />
+		</div>
+	</div>
+
 	<!-- Scripts -->
 	<script src="../assets/js/jquery.min.js"></script>
 	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/jquery.validate.min.js"></script>
 	<script src="../assets/js/jquery.scrolly.min.js"></script>
 	<script src="../assets/js/browser.min.js"></script>
 	<script src="../assets/js/breakpoints.min.js"></script>
 	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/pricingData.js"></script>
+	<script src="../assets/js/form-validation.js"></script>
 	<script src="../assets/js/main.js"></script>
 	<script src="../assets/js/custom.js"></script>
 </body>

@@ -1,4 +1,76 @@
 $(document).ready(function () {
+    // Language messages object
+    const messages = {
+        english: {
+            name: {
+                required: "Please enter your name.",
+                regex: "Name can only contain letters and spaces."
+            },
+            phone: {
+                required: "Please enter your phone number.",
+                digits: "Please enter a valid phone number.",
+                maxlength: "Phone number cannot be more than 10 digits."
+            },
+            email: {
+                required: "Please enter your email.",
+                email: "Please enter a valid email address."
+            },
+            message: {
+                required: "Please enter your message.",
+                regex: "Message cannot contain < or > characters."
+            },
+            response: "Thank you for your message! We have received it and will get back to you as soon as possible."
+        },
+        hindi: {
+            name: {
+                required: "कृपया अपना नाम दर्ज करें।",
+                regex: "नाम में केवल अक्षर और स्पेस हो सकते हैं।"
+            },
+            phone: {
+                required: "कृपया अपना फोन नंबर दर्ज करें।",
+                digits: "कृपया एक वैध फोन नंबर दर्ज करें।",
+                maxlength: "फोन नंबर 10 अंकों से अधिक नहीं हो सकता।"
+            },
+            email: {
+                required: "कृपया अपना ईमेल दर्ज करें।",
+                email: "कृपया एक वैध ईमेल पता दर्ज करें।"
+            },
+            message: {
+                required: "कृपया अपना संदेश दर्ज करें।",
+                regex: "संदेश में < या > वर्ण नहीं हो सकते।"
+            },
+            response: "आपका संदेश प्राप्त हुआ है! हम जल्दी से जल्दी आपसे संपर्क करेंगे।"
+        },
+        hinglish: {
+            name: {
+                required: "Apna naam daalna mat bhoolo.",
+                regex: "Naam sirf letters aur spaces hone chahiye."
+            },
+            phone: {
+                required: "Apna phone number daalna mat bhoolo.",
+                digits: "Ek valid phone number daalo.",
+                maxlength: "Phone number 10 digits se zyada nahi ho sakta."
+            },
+            email: {
+                required: "Apna email daalna mat bhoolo.",
+                email: "Ek valid email address daalo."
+            },
+            message: {
+                required: "Apna message daalna mat bhoolo.",
+                regex: "Message mein < ya > characters nahi hone chahiye."
+            },
+            response: "Aapka message mil gaya hai! Hum jaldi aapse sampark karenge."
+        }
+    };
+
+    // Determine the current language from the body's class
+    let currentLanguage = 'english'; // default language
+    if ($('body').is('.hindi')) {
+        currentLanguage = 'hindi';
+    } else if ($('body').is('.hinglish')) {
+        currentLanguage = 'hinglish';
+    }
+
     // Add a custom method for regex validation
     $.validator.addMethod("regex", function (value, element, regexp) {
         const re = new RegExp(regexp);
@@ -28,23 +100,10 @@ $(document).ready(function () {
             }
         },
         messages: {
-            name: {
-                required: "Please enter your name.",
-                regex: "Name can only contain letters and spaces."
-            },
-            phone: {
-                required: "Please enter your phone number.",
-                digits: "Phone number must be digits only.",
-                maxlength: "Phone number cannot be more than 10 digits."
-            },
-            email: {
-                required: "Please enter your email.",
-                email: "Please enter a valid email address."
-            },
-            message: {
-                required: "Please enter your message.",
-                regex: "Message cannot contain < or > characters."
-            }
+            name: messages[currentLanguage].name,
+            phone: messages[currentLanguage].phone,
+            email: messages[currentLanguage].email,
+            message: messages[currentLanguage].message
         },
         submitHandler: function (form) {
             // Secure AJAX form submission
@@ -60,14 +119,13 @@ $(document).ready(function () {
                     phone: $('#phone').val(),
                     message: $('#message').val()
                 },
-                success: function (response) {
-                    var responseText = "We have received your message successfully.";
+                success: function () {
+                    var responseText = messages[currentLanguage].response;
                     updateModal(responseText);
                     showModal('#thankYouModal');
                     $(form)[0].reset();
                 },
-                error: function (xhr, status, error) {
-                    console.log("AJAX request failed.");
+                error: function () {
                     alert('There was an error sending your message. Please try again later.');
                 },
                 complete: function () {

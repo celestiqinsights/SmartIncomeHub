@@ -15,7 +15,7 @@
 	</noscript>
 </head>
 
-<body class="is-preload">
+<body class="is-preload hinglish">
 
 	<!-- Sidebar -->
 	<section id="sidebar">
@@ -120,19 +120,19 @@
 							</div>
 							<ul class="pricing-items">
 								<li>
-									<strong>30</strong> Din ka kaam
+									<strong><span class="numeric-value"></span></strong> Din ka kaam
 								</li>
 								<li>
-									<strong>10 Tasks</strong> Roz
+									<strong><span class="numeric-value"></span> Tasks</strong> Roz
 								</li>
 								<li>
-									<strong>₹75</strong> per task kamao
+									<strong><span class="numeric-value"></span></strong> per task kamao
 								</li>
 								<li>
-									<strong>₹750</strong> Roz kamao
+									<strong><span class="numeric-value"></span></strong> Roz kamao
 								</li>
 								<li>
-									<strong>₹22,500</strong> Mahine mein kamao
+									<strong><span class="numeric-value"></span></strong> Mahine mein kamao
 								</li>
 							</ul>
 							<div class="buy-button-box">
@@ -154,19 +154,19 @@
 							</div>
 							<ul class="pricing-items">
 								<li>
-									<strong>30</strong> Din ka kaam
+									<strong><span class="numeric-value"></span></strong> Din ka kaam
 								</li>
 								<li>
-									<strong>10 Tasks</strong> Roz
+									<strong><span class="numeric-value"></span> Tasks</strong> Roz
 								</li>
 								<li>
-									<strong>₹175</strong> per task kamao
+									<strong><span class="numeric-value"></span></strong> per task kamao
 								</li>
 								<li>
-									<strong>₹1,750</strong> Roz kamao
+									<strong><span class="numeric-value"></span></strong> Roz kamao
 								</li>
 								<li>
-									<strong>₹52,500</strong> Mahine mein kamao
+									<strong><span class="numeric-value"></span></strong> Mahine mein kamao
 								</li>
 							</ul>
 							<div class="buy-button-box">
@@ -189,19 +189,19 @@
 							</div>
 							<ul class="pricing-items">
 								<li>
-									<strong>30</strong> Din ka kaam
+									<strong><span class="numeric-value"></span></strong> Din ka kaam
 								</li>
 								<li>
-									<strong>10 Tasks</strong> Roz
+									<strong><span class="numeric-value"></span> Task</strong> Roz
 								</li>
 								<li>
-									<strong>₹300</strong> per task kamao
+									<strong><span class="numeric-value"></span></strong> per task kamao
 								</li>
 								<li>
-									<strong>₹3,000</strong> Roz kamao
+									<strong><span class="numeric-value"></span></strong> Roz kamao
 								</li>
 								<li>
-									<strong>₹90,000</strong> Mahine mein kamao
+									<strong><span class="numeric-value"></span></strong> Mahine mein kamao
 								</li>
 							</ul>
 							<div class="buy-button-box">
@@ -223,19 +223,19 @@
 							</div>
 							<ul class="pricing-items">
 								<li>
-									<strong>30</strong> Din ka kaam
+									<strong><span class="numeric-value"></span></strong> Din ka kaam
 								</li>
 								<li>
-									<strong>10 Tasks</strong> Roz
+									<strong><span class="numeric-value"> Task</span></strong> Roz
 								</li>
 								<li>
-									<strong>₹500</strong> per task kamao
+									<strong><span class="numeric-value"></span></strong> per task kamao
 								</li>
 								<li>
-									<strong>₹5,000</strong> Roz kamao
+									<strong><span class="numeric-value"></span></strong> Roz kamao
 								</li>
 								<li>
-									<strong>₹1,50,000</strong> Mahine mein kamao
+									<strong><span class="numeric-value"></span></strong> Mahine mein kamao
 								</li>
 							</ul>
 							<div class="buy-button-box">
@@ -251,29 +251,33 @@
 		</section>
 
 		<!-- Four -->
-		<section id="four" class="wrapper style1 fade-up">
+		<section id="four" class="wrapper fade-up contact-us-section">
 			<div class="inner">
 				<h2>Get in touch</h2>
 				<p>Agar aapke paas koi sawaal hai ya aap jaana chahte hain ki aap humare saath kaise kamaai kar sakte hain, toh hum aapki madad ke liye yahan hain! Aaj hi humein message karein, aur hum baat karenge ki hamara aasaan process aapke liye kaise kaam kar sakta hai. Aapki aarthik svatantrata ki yatra ek simple message se shuru hoti hai!</p>
 				<div class="split style1">
 					<section>
-						<form method="post" action="#">
+						<form method="post" id="contactForm">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
+									<input type="text" name="name" id="name" required />
 								</div>
 								<div class="field half">
+									<label for="phone">Phone</label>
+									<input type="tel" name="phone" id="phone" required />
+								</div>
+								<div class="field">
 									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
+									<input type="text" name="email" id="email" required />
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="5"></textarea>
+									<textarea name="message" id="message" rows="5" required maxlength="1500"></textarea>
 								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="" class="button submit">Send Message</a></li>
+								<li><button type="submit" class="button submit">Send Message</button></li>
 							</ul>
 						</form>
 					</section>
@@ -328,13 +332,42 @@
 		</div>
 	</footer>
 
+	<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header ftco-degree-bg">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#thankYouModal">
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</button>
+				</div>
+				<div class="modal-body pt-md-0 pb-md-5 text-center">
+					<h2>Humse sampark karne ke liye shukriya!</h2>
+					<div class="icon d-flex align-items-center justify-content-center">
+						<img src="../assets/images/email.svg" alt="Email Confirmation Background" class="img-fluid" />
+					</div>
+					<h4 class="mb-2" id="thankYouModalMessage"></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="backdrop"></div>
+	<div class="loading-backdrop">
+		<div class="loading-icon-wrapper">
+			<img src="../assets/images/loading-icon.svg" alt="Loading..." />
+		</div>
+	</div>
+
 	<!-- Scripts -->
 	<script src="../assets/js/jquery.min.js"></script>
 	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/jquery.validate.min.js"></script>
 	<script src="../assets/js/jquery.scrolly.min.js"></script>
 	<script src="../assets/js/browser.min.js"></script>
 	<script src="../assets/js/breakpoints.min.js"></script>
 	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/pricingData.js"></script>
+	<script src="../assets/js/form-validation.js"></script>
 	<script src="../assets/js/main.js"></script>
 	<script src="../assets/js/custom.js"></script>
 </body>
