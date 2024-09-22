@@ -24,12 +24,23 @@ $(document).ready(function () {
     // Initialize all functionalities
     faqAccordion();
 
+    // Update copyright year
     var currentYear = new Date().getFullYear();
     $('#copyright-year').text(currentYear);
 
+    // Hamburger menu toggle
     $('.hamburger').on('click', function () {
         $('.nav-menu').toggleClass('active');
         $(this).toggleClass('active');
     });
-});
 
+    // Load footer
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data; // Adjusted ID to match your footer container
+            // Ensure copyright year is set
+            $('#copyright-year').text(currentYear);
+        })
+        .catch(error => console.error('Error loading footer:', error));
+});
