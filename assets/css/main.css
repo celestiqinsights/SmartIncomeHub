@@ -662,8 +662,13 @@ body {
   position: relative;
   display: inline-block;
   margin-left: 10px;
-  font-size: 24px;
+  font-size: 20px;
   border: none;
+}
+.designed-by .icon {
+  position: absolute;
+  top: -10px;
+  right: -20px;
 }
 .designed-by:hover {
   color: #eb3b5a;
@@ -704,10 +709,6 @@ body {
     margin: 0;
   }
 }
-#footer .brand {
-  display: inline-block;
-  margin-right: 10px;
-}
 
 .hindi .accordion-item-que {
   font-size: 20px;
@@ -731,6 +732,10 @@ body {
 
 .numeric-value {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.copyright-menu {
+  font-size: 0.85rem !important;
 }
 
 html,
