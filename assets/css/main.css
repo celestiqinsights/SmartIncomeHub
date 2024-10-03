@@ -200,11 +200,11 @@ body.modal-open {
   background-color: #26de81 !important;
 }
 
-.max .price-circle {
+.echo .price-circle {
   border: 10px solid #ef5a6f;
 }
-.max .buy-now,
-.max .pricing-header {
+.echo .buy-now,
+.echo .pricing-header {
   background-color: #ef5a6f !important;
 }
 
@@ -239,6 +239,7 @@ body.modal-open {
 .pricing-section .pricing-card {
   position: relative;
   height: 100%;
+  padding-bottom: 125px;
   background-color: #ffffff;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -317,12 +318,12 @@ body.modal-open {
 }
 .pricing-section .pricing-card ul {
   margin: 100px 0 0;
-  padding: 0;
+  padding: 0 10px;
 }
 .pricing-section .pricing-card ul li {
   list-style-type: none;
   display: block;
-  padding: 10px 0;
+  padding: 15px 0;
   margin: 0;
   border-bottom: 1px solid #f2f2f2;
   font-size: 0.75em;
@@ -337,6 +338,9 @@ body.modal-open {
   }
 }
 .pricing-section .pricing-card .buy-button-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   margin: 25px 0 30px;
 }
 .pricing-section .pricing-card .buy-button-box .buy-now {
@@ -736,6 +740,10 @@ body {
 
 .copyright-menu {
   font-size: 0.85rem !important;
+}
+
+.center-content {
+  text-align: center;
 }
 
 html,
