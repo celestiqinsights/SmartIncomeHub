@@ -346,6 +346,8 @@ body.modal-open {
 .pricing-section .pricing-card .buy-button-box .buy-now {
   min-width: 75%;
   padding: 15px;
+  justify-content: center;
+  text-align: center;
   background-image: none !important;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.4);
 }
