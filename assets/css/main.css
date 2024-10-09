@@ -361,6 +361,12 @@ body {
   margin: 0;
 }
 
+a.button {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
 .lang-selection {
   display: flex;
   align-items: center;
@@ -754,18 +760,20 @@ body {
 .calculate-earning {
   margin: 75px 0;
 }
-.calculate-earning .choose-course {
-  max-width: 350px;
-}
 
 .earning-detail-header {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-end;
+}
+.earning-detail-header .choose-course {
+  max-width: 350px;
 }
 .earning-detail-header .join-course-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .earning-detail-header .join-course-wrapper .course-price {
   margin-right: 25px;
@@ -775,30 +783,46 @@ body {
 .earning-detail-header .join-course-wrapper .join-course-btn .button {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  .earning-detail-header .choose-course,
+  .earning-detail-header .join-course-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+  .earning-detail-header .join-course-wrapper {
+    padding: 30px 0;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+  }
+}
 
 .earning-details {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   margin: 50px 0;
-  align-items: center;
   justify-items: center;
   border-radius: 0.25em;
 }
 .earning-details .ed-item {
+  display: flex;
   width: 100%;
   padding: 50px 25px;
-  font-size: 1.75rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
   font-weight: 500;
   word-spacing: 2px;
   text-align: center;
   border-radius: 0.25em;
   border: solid 1px rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.05);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 .earning-details .ed-item p {
   margin: 0;
+  width: 100%;
+  justify-content: center;
 }
 .earning-details .ed-item p.ed-title {
   margin-bottom: 25px;
@@ -806,7 +830,7 @@ body {
   text-transform: uppercase;
 }
 .earning-details .ed-item p.ed-text {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   letter-spacing: 3px;
 }
 .earning-details .ed-item:hover {
@@ -816,27 +840,28 @@ body {
 .earning-details .ed-text-hide {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .earning-details {
+    gap: 25px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .earning-details {
     grid-template-columns: 1fr;
   }
 }
 
 .basic .f-basic {
-  display: block !important;
+  display: flex !important;
 }
 
 .standard .f-standard {
-  display: block !important;
+  display: flex !important;
 }
 
 .pro .f-pro {
-  display: block !important;
+  display: flex !important;
 }
 
 html,
