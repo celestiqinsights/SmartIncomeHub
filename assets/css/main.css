@@ -3159,6 +3159,10 @@ dl dd {
   margin-left: 2em;
 }
 
+li::first-letter {
+  text-transform: uppercase;
+}
+
 /* Actions */
 ul.actions {
   display: -moz-flex;
