@@ -782,9 +782,6 @@ a.button {
   font-size: 2rem;
   font-weight: 500;
 }
-.earning-detail-header .join-course-wrapper .join-course-btn .button {
-  display: none;
-}
 @media screen and (max-width: 768px) {
   .earning-detail-header .choose-course,
   .earning-detail-header .join-course-wrapper {
@@ -795,6 +792,13 @@ a.button {
     padding: 30px 0;
     border: solid 1px rgba(255, 255, 255, 0.15);
   }
+}
+
+.join-course-btn {
+  display: inline-flex;
+}
+.join-course-btn .button {
+  display: none;
 }
 
 .earning-details {
@@ -2873,6 +2877,7 @@ select {
   height: 2.75em;
   padding-right: 2.75em;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 select option {
   color: #ffffff;
